@@ -3,7 +3,7 @@
 
 Tools for RO-Crate to be used for creating and distributing Schema.org style ontologies. 
 
-Given an RO-Crate contining `rdfs:Class`, `rdf:Property`, `schema:DefinedTerm` and 'schema:DefinedTermSet` definitions, this code can generate:
+Given an RO-Crate containing `rdfs:Class`, `rdf:Property`, `schema:DefinedTerm` and `schema:DefinedTermSet` definitions, this code can generate:
 
 -  HTML or Markdown landing pages to document an ontology - eg <http://purl.archive.org/textcommons/terms>
 
@@ -15,7 +15,7 @@ Given an RO-Crate contining `rdfs:Class`, `rdf:Property`, `schema:DefinedTerm` a
 
 Schema.org is available in ... schema.org [JSON-LD format](https://schema.org/version/latest/schemaorg-current-https.jsonld). 
 
-For example, schema:Dataset has the followingn definition:
+For example, `schema:Dataset` has the followinng definition:
 
 ```
    {
@@ -40,11 +40,10 @@ For example, schema:Dataset has the followingn definition:
       "schema:source": {
         "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_DatasetClass"
       }
-    },
-
+   }
 ```
 
-Note that there is a schema:Class Class, but we follow Schema.org practice and use rdfs:Class and rdf:Property for describing classes and schemas.
+Note that there is a `schema:Class` Class, but we follow Schema.org practice and use `rdfs:Class` and `rdf:Property` for describing classes and schemas.
 
 
 ## Usage
@@ -67,7 +66,3 @@ Options:
   -o, --output-path [rep]  Directory into which to write output (default: null)
   -h, --help               display help for command
 ```
-
-
-
-
